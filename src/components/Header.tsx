@@ -5,12 +5,12 @@ import { FaRegHospital, FaAddressBook } from "react-icons/fa";
 import { FaPhoneVolume } from "react-icons/fa6";
 const Header = () => {
 	return (
-		<header className="px-4 py-6 flex justify-between border-b xl:px-0 xl:mx-28">
-			<div className="m-auto xl:m-0">
+		<header className="flex justify-between px-4 py-6 border-b lg:px-0 lg:mx-12 xl:mx-28">
+			<div className="m-auto lg:m-0">
 				<Logo />
 			</div>
-			<div className="hidden xl:flex">
-				<div className="flex items-center mr-20 gap-12">
+			<div className="hidden lg:flex">
+				<div className="flex items-center gap-12 mr-20">
 					<ContactData
 						icon={<FaRegHospital />}
 						title={"Jl. Sunset Road"}

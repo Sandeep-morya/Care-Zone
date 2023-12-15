@@ -8,12 +8,12 @@ const Navbar = () => {
 	const [isOpen,setIsOpen]  = useState(false);
 	const toggleDrawer = () => setIsOpen(prev => !prev)
 	return (
-		<nav className="w-full h-16 flex justify-between items-center p-4 xl:px-28">
-			<div onClick={toggleDrawer} className="block xl:hidden text-primary text-xl">
+		<nav className="flex items-center justify-between w-full h-16 p-4 lg:px-12 xl:px-28">
+			<div onClick={toggleDrawer} className="block text-xl lg:hidden text-primary">
 				<FaBars />
 			</div>
-			<nav className="hidden xl:flex ">
-				<ul className="font-semibold flex gap-8 text-sm">
+			<nav className="hidden lg:flex ">
+				<ul className="flex gap-8 text-sm font-semibold">
 					<li className="text-primary hover:bg-black/5">Home</li>
 					<li className="text-secondary/75 hover:bg-black/5 active:text-primary hover:text-primary ">
 						Services
@@ -25,7 +25,7 @@ const Navbar = () => {
 			</nav>
 			<div className="flex items-center gap-4">
 				<p className="font-semibold text-secondary">Follow Us:</p>
-				<ul className="flex items-center text-primary gap-4 text-xl">
+				<ul className="flex items-center gap-4 text-xl text-primary">
 					<li>
 						<FaFacebookSquare />
 					</li>
