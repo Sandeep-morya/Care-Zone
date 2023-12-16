@@ -8,12 +8,14 @@ import Services from './components/Services'
 import ContactSection from './components/ContactSection'
 import AboutSection from './components/AboutSection'
 import Signature from './components/Signature'
+import { useInView } from 'react-intersection-observer';
 
 const App = () => {
+  const { ref, inView } = useInView()
   return (
     <main>
-        <Header />
-        <Navbar/>
+        <Header target={ref} />
+        <Navbar inView={inView}/>
         <HeroSection/>
         <CardsSection/>
         <Services/>

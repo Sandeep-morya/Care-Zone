@@ -3,10 +3,11 @@ import Button from "./ui/Button";
 import ContactData from "./ui/ContactData";
 import { FaRegHospital, FaAddressBook } from "react-icons/fa";
 import { FaPhoneVolume } from "react-icons/fa6";
-const Header = () => {
+
+const Header = ({ target }: { target: (node?: Element | null | undefined) => void }) => {
 	return (
 		<header className="flex justify-between px-4 py-6 border-b lg:px-0 lg:mx-12 xl:mx-28">
-			<div className="m-auto lg:m-0">
+			<div ref={target} className="m-auto lg:m-0">
 				<Logo />
 			</div>
 			<div className="hidden lg:flex">

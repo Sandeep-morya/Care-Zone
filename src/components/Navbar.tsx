@@ -4,18 +4,29 @@ import { FaBars } from "react-icons/fa";
 import DrawerContent from "./common/DrawerContent";
 import Drawer from "./common/Drawer";
 import SocailIcons from "./ui/SocailIcons";
+import { twMerge } from "tailwind-merge";
 
-const Navbar = () => {
+const Navbar = ({inView}:{inView:boolean}) => {
 	const [isOpen, setIsOpen] = useState(false);
 	const toggleDrawer = () => setIsOpen((prev) => !prev);
+
 	return (
-		<nav className="flex items-center justify-between w-full h-16 p-4 lg:h-[4.5rem] lg:px-12 xl:px-28">
+		<nav className={twMerge("flex sticky z-20 bg-white top-0 items-center justify-between w-full h-16 p-4 lg:h-[4.5rem] lg:px-12 xl:px-28",!inView &&"shadow-xl")}>
 			<div
 				onClick={toggleDrawer}
 				className="block text-xl lg:hidden text-primary">
 				<FaBars />
 			</div>
-			<nav className="hidden lg:flex ">
+			<div className="flex-1 lg:hidden ">
+				{!inView && <div className="mx-4">
+					<img className="h-10 aspect-square" src={"icon.png"} />
+				</div>}
+			</div>
+
+			<nav className="hidden lg:flex items-center ">
+				{!inView && <div className="mr-16">
+					<img  className="h-[3.5rem] aspect-square" src={"icon.png"} />
+				</div>}
 				<ul className="flex gap-16 text-sm font-bold">
 					<li className="text-primary hover:bg-black/5">
 						<a href="#home">Home</a>
@@ -32,7 +43,7 @@ const Navbar = () => {
 				</ul>
 			</nav>
 			<div className="flex items-center gap-4">
-				<p className="font-semibold text-secondary">Follow Us:</p>
+				{inView && <p className="font-semibold text-secondary">Follow Us:</p>}
 				<SocailIcons />
 			</div>
 			{isOpen && (
