@@ -11,6 +11,7 @@ export default {
       colors: {
         primary: "#F84365",
         secondary: "#050A24",
+        third:"#121C52",
         lightblack: "rgba(0,0,0,0.7)",
         lightwhite: "rgba(255,255,255,0.3)",
         dark: "#303136",
