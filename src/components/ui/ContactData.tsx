@@ -7,7 +7,7 @@
 const ContactData = ({ icon, title, value }: Props) => {
 	return (
 		<div className="flex items-center gap-4">
-			<div className="bg-primary text-white flex justify-center items-center h-[45px] text-xl rounded-full aspect-square">
+			<div className="bg-primary hover:bg-third transition active:scale-95 text-white flex justify-center items-center h-[45px] text-xl rounded-full aspect-square">
 				{icon}
 			</div>
 			<div>

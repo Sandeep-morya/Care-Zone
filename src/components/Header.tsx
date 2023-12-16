@@ -23,7 +23,7 @@ const Header = () => {
 					/>
 				</div>
 				<div className="m-auto">
-					<Button icon={<FaAddressBook />}>Contact Us</Button>
+					<Button icon={<FaAddressBook />}>Make Appointment</Button>
 				</div>
 			</div>
 		</header>

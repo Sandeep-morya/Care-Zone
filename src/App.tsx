@@ -5,6 +5,9 @@ import Footer from './components/Footer'
 import { HeroSection } from './components/HeroSection'
 import CardsSection from './components/CardsSection'
 import Services from './components/Services'
+import ContactSection from './components/ContactSection'
+import AboutSection from './components/AboutSection'
+import Signature from './components/Signature'
 
 const App = () => {
   return (
@@ -14,6 +17,9 @@ const App = () => {
         <HeroSection/>
         <CardsSection/>
         <Services/>
+        <AboutSection/>
+        <ContactSection/>
+        <Signature/>
         <Footer/>
     </main>
   )

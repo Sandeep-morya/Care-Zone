@@ -9,14 +9,14 @@ const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	const toggleDrawer = () => setIsOpen((prev) => !prev);
 	return (
-		<nav className="flex items-center justify-between w-full h-16 p-4 lg:px-12 xl:px-28">
+		<nav className="flex items-center justify-between w-full h-16 p-4 lg:h-[4.5rem] lg:px-12 xl:px-28">
 			<div
 				onClick={toggleDrawer}
 				className="block text-xl lg:hidden text-primary">
 				<FaBars />
 			</div>
 			<nav className="hidden lg:flex ">
-				<ul className="flex gap-8 text-sm font-semibold">
+				<ul className="flex gap-16 text-sm font-bold">
 					<li className="text-primary hover:bg-black/5">
 						<a href="#home">Home</a>
 					</li>

@@ -9,6 +9,7 @@ export default {
     darkMode: 'class',
     extend: {
       colors: {
+        // 33ff44
         primary: "#F84365",
         secondary: "#050A24",
         third:"#121C52",
