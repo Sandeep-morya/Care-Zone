@@ -2,7 +2,7 @@
 import { useInView } from 'react-intersection-observer';
 interface Props {
     title:string;
-    percent:number
+    percent:number;
 }
 const Progress = ({title,percent}:Props) => {
     const [level,setLevel] = useState(0);

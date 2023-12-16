@@ -8,7 +8,7 @@ const WorkHours = () => {
         <div className='flex items-center gap-4'>
             <div className='text-primary'><FaClock/></div>
               <p>
-                  9 AM - 5 PM , Monday - Saturday</p>
+          24/7 Availability</p>
         </div>
       </div>
   )

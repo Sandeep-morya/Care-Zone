@@ -1,5 +1,5 @@
 ﻿import { servicesData } from "../data";
-import ButtonLink from "../ui/ButtonLink";
+// import ButtonLink from "../ui/ButtonLink";
 
 type CardProps = (typeof servicesData)[0];
 
@@ -8,7 +8,7 @@ const ServiceCard = ({
     title,
     icon,
     image,
-    handler,
+    // handler,
 }: CardProps) => {
     const Icon = icon;
     return (
@@ -32,7 +32,8 @@ const ServiceCard = ({
                     <p className="text-sm text-third/75 group-hover:text-white/75">
                         {description}
                     </p>
-                    <ButtonLink onClick={handler}>Read More</ButtonLink>
+                    <div className="bg-primary w-[30%] rounded-full h-1"></div>
+                    {/* <ButtonLink onClick={handler}>Read More</ButtonLink> */}
                 </div>
             </div>
         </article>

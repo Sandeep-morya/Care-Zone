@@ -13,13 +13,14 @@ const Header = () => {
 				<div className="flex items-center gap-12 mr-20">
 					<ContactData
 						icon={<FaRegHospital />}
-						title={"Jl. Sunset Road"}
-						value={"Kuta, Bali - 80361"}
+						title={"Lower Ground Floor, Shop No 2"}
+						value={"Golf City Lucknow - 226001"}
 					/>
 					<ContactData
 						icon={<FaPhoneVolume />}
 						title={"Phone Number"}
-						value={"(+62)81 548 5612"}
+						value={"+91 9336622773"}
+						value2="+91 9984713288"
 					/>
 				</div>
 				<div className="m-auto">

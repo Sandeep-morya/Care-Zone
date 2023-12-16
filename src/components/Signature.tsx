@@ -22,27 +22,32 @@ const Signature = () => {
 					<h2 className="font-medium text-lg text-white mt-4 mb-2">
 						Emergency Call
 					</h2>
-					<p className="text-white/50">{"(+62)81 548 5612"}</p>
+					<p className="text-white/50 tracking-wider">{"(+91) 9984713288"}</p>
 				</div>
-        <div className="flex justify-center items-center">
-{/* signature */}
-        </div>
+				<div className="flex justify-center items-center">
+					{/* signature */}
+				</div>
 			</div>
-      <div className="flex flex-col lg:w-[50%]">
-        <p className="text-third/75">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit</p>
-        <div className="flex mt-6 flex-col gap-2 lg:gap-8 lg:flex-row ">
-          <div className="flex flex-col gap-2">
-            <Li>Safety & Security Guaranty</Li>
-            <Li>Professional Nurses</Li>
-            <Li>Low Cost Service</Li>
-          </div>
-          <div className="flex flex-col gap-2">
-            <Li>On-Site Physician Services</Li>
-            <Li>On-Site Physician Services</Li>
-            <Li>On-Site Physician Services</Li>
-          </div>
-     </div>
-      </div>
+			<div className="flex flex-col lg:w-[50%]">
+				<p className="text-third/75">
+					We offer various in-home healthcare services like Physiotherapy,
+					Nursing, Attendant/Home Health Aide, Doctor Visit. We will keep on
+					adding more in-home healthcare services with a vision to bring world
+					class medical care into our patients’ homes.
+				</p>
+				<div className="flex mt-6 flex-col gap-2 lg:gap-12 lg:flex-row ">
+					<div className="flex flex-col gap-2">
+						<Li>Nursing Care</Li>
+						<Li>Patient Care</Li>
+						<Li>Elder Care</Li>
+					</div>
+					<div className="flex flex-col gap-2">
+						<Li>Baby Care</Li>
+						<Li>Physiotherapy</Li>
+						<Li>Blood Test</Li>
+					</div>
+				</div>
+			</div>
 		</section>
 	);
 };

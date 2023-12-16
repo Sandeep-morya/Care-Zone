@@ -8,7 +8,7 @@ export const HeroSection = () => {
 	return (
 		<section ref={ref} id="home" className="w-full overflow-hidden h-[480px] lg:h-[600px] xl:h-[700px] relative">
 			<img
-				className={twMerge("absolute transition duration-1000 object-cover object-top w-full h-full scale-125",inView && "scale-100")}
+				className={twMerge("absolute transition duration-1000 object-cover object-right-top lg:object-top w-full h-full scale-125",inView && "scale-100")}
 				src="https://templatekit.jegtheme.com/nursera/wp-content/uploads/sites/216/2021/12/portrait-of-asian-disabled-senior-elderly-male-stand-with-walker-enjoy-stay-home-nursing-care--e1638524632908.jpg"
 			/>
 			<div

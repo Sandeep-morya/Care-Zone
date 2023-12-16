@@ -23,8 +23,7 @@ const ContactSection = () => {
 							We Provide Quality Home Care & Private Nursing Service
 						</h2>
 						<p className="text-white/50 text-center ">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-							eiusmod tempor incididunt ut labore et dolore magna aliqua
+							At Care Zone, we prioritize providing not only healthcare but also a warm and caring environment to our patients.
 						</p>
 					</div>
 				</div>

@@ -7,7 +7,7 @@ import ServiceCard from "./services/ServiceCard";
 const Services = () => {
 	return (
 		<section id="services" className="px-8 py-16 lg:px-12 xl:px-24">
-			<div className="flex flex-col justify-between gap-4 lg:flex-row lg:gap-8 xl:gap-12">
+			<div className="flex flex-col justify-between gap-4 lg:grid lg:grid-cols-[1fr,2fr,1fr] lg:gap-8 xl:gap-12">
 				<div>
 					<h2 className="text-lg font-semibold text-primary">Our Services</h2>
 					<h3 className="text-2xl font-bold text-third">
@@ -16,8 +16,7 @@ const Services = () => {
 				</div>
 				<div className="text-third/50">
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-						eiusmod tempor incididunt ut labore et dolore magna aliqua
+						Explore CareZone's comprehensive healthcare services, addressing a variety of needs, tailored to prioritize your well-being and ensure personalized care excellence.
 					</p>
 				</div>
 				<div className="mt-4">
