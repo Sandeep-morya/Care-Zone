@@ -4,27 +4,27 @@ import Li from "./ui/Li";
 
 const Signature = () => {
 	return (
-		<section className="p-6 pt-0 mb-24 flex flex-col lg:flex-row gap-6 lg:gap-8 xl:gap-28 lg:px-12 xl:px-28">
+		<section className="flex flex-col gap-6 p-6 pt-0 mb-24 lg:flex-row lg:gap-8 xl:gap-28 lg:px-12 xl:px-28">
 			<div className="w-full lg:w-[50%]">
 				<div className="flex items-start gap-6">
-					<div className="text-primary text-5xl">
+					<div className="text-5xl text-primary">
 						<FaQuoteRight />
 					</div>
-					<p className="font-medium text-lg text-secondary/75 italic">
+					<p className="text-lg italic font-medium text-secondary/75">
 						We provide supportive, compassionate and highly qualified nurses for
 						all your nursing and medical needs
 					</p>
 				</div>
-				<div className="shadow rounded-xl mt-4 bg-third flex flex-col justify-center items-center p-8">
+				<a href="tel:9336622773" className="flex flex-col items-center justify-center p-8 mt-4 transition shadow rounded-xl bg-third active:scale-95">
 					<div className="w-[65px] rounded-full text-2xl aspect-square flex justify-center items-center bg-primary text-white hover:bg-white hover:text-third">
 						<FaPhoneAlt />
 					</div>
-					<h2 className="font-medium text-lg text-white mt-4 mb-2">
+					<h2 className="mt-4 mb-2 text-lg font-medium text-white">
 						Emergency Call
 					</h2>
-					<p className="text-white/50 tracking-wider">{"(+91) 9984713288"}</p>
-				</div>
-				<div className="flex justify-center items-center">
+					<p className="tracking-wider text-white/50">{"(+91) 9336622773"}</p>
+				</a>
+				<div className="flex items-center justify-center">
 					{/* signature */}
 				</div>
 			</div>
@@ -35,7 +35,7 @@ const Signature = () => {
 					adding more in-home healthcare services with a vision to bring world
 					class medical care into our patients’ homes.
 				</p>
-				<div className="flex mt-6 flex-col gap-2 lg:gap-12 lg:flex-row ">
+				<div className="flex flex-col gap-2 mt-6 lg:gap-12 lg:flex-row ">
 					<div className="flex flex-col gap-2">
 						<Li>Nursing Care</Li>
 						<Li>Patient Care</Li>

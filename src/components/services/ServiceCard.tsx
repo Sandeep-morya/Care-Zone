@@ -17,7 +17,8 @@ const ServiceCard = ({
                 <img
                     className="w-full h-full shadow-xl rounded-xl"
                     src={image}
-                    alt="service"
+                    loading="lazy"
+                    alt="services"
                 />
             </div>
 

@@ -4,26 +4,19 @@ import ContactForm from "./contact/ContactForm";
 
 const ContactSection = () => {
 	return (
-		<section id="contact-us" className="w-full">
-			<div
-				className="w-full aspect-square lg:aspect-[16/6]"
-				style={{
-					backgroundImage:
-						"url('https://templatekit.jegtheme.com/nursera/wp-content/uploads/sites/216/2021/12/elderly-patient-and-caregiver-e1638524701577.jpg')",
-					backgroundAttachment: "fixed",
-					backgroundSize: "cover",
-					backgroundPosition: "top",
-				}}>
-				<div className="border w-full h-full bg-secondary/75 px-6 py-12">
-					<div className="flex p-2 flex-col gap-4 lg:px-12  items-center">
-						<h3 className="text-primary text-xl font-semibold">
+		<section id="appointment" className="w-full py-16">
+			<div className="w-full aspect-[4/6] lg:aspect-[16/6]">
+				<div className="w-full h-full px-6 py-12 border bg-secondary/75">
+					<div className="flex flex-col items-center gap-4 p-2 lg:px-12">
+						<h3 className="text-xl font-semibold text-primary">
 							Make Appointment
 						</h3>
-						<h2 className="text-2xl  lg:text-4xl  font-semibold text-center text-white">
+						<h2 className="text-2xl font-semibold text-center text-white lg:text-4xl">
 							We Provide Quality Home Care & Private Nursing Service
 						</h2>
-						<p className="text-white/50 text-center ">
-							At Care Zone, we prioritize providing not only healthcare but also a warm and caring environment to our patients.
+						<p className="text-center text-white/50 ">
+							At Care Zone, we prioritize providing not only healthcare but also
+							a warm and caring environment to our patients.
 						</p>
 					</div>
 				</div>

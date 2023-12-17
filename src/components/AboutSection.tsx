@@ -1,24 +1,18 @@
-﻿// import React from 'react'
-import Progress from "./about/Progress";
-import Button from "./ui/Button";
-import { FaStethoscope } from "react-icons/fa";
+﻿import Progress from "./about/Progress";
+import logoname from "../assets/logoname.png";
+import aboutFirst from "../assets/web-images/about-first.jpg";
+import aboutSecond from "../assets/web-images/about-second.jpg";
+import aboutThird from "../assets/web-images/about-third.jpg";
 
 const AboutSection = () => {
 	return (
 		<section
 			id="about-us"
-			className="px-8 py-16 flex flex-col lg:flex-row gap-4 lg:gap-12 lg:px-12 xl:px-24">
-			{/* <div className="w-full lg:hidden aspect-[4/3] rounded-xl overflow-hidden shadow-xl">
-				<img
-					className="w-full h-full object-cover"
-					src="https://templatekit.jegtheme.com/nursera/wp-content/uploads/sites/216/elementor/thumbs/male-nurse-helping-senior-woman-with-walking-stick-pgv084s5knxvjh793l301vphth8su6gr3a2obtbchs.jpg"
-					alt="helping nurse"
-				/>
-			</div> */}
+			className="flex flex-col gap-4 px-8 py-20 lg:flex-row lg:gap-12 lg:px-12 xl:px-24">
 			<div className="flex mt-6 lg:mt-0 lg:w-[40%] flex-col gap-4">
 				<h2 className="text-lg font-semibold text-primary">
-					About{" "}
-					<span className="font-extrabold tracking-wider text-xl">
+					About
+					<span className="text-xl font-extrabold tracking-wider">
 						Care Zone
 					</span>
 				</h2>
@@ -33,7 +27,7 @@ const AboutSection = () => {
 						prioritize your well-being."
 					</p>
 				</div>
-				<div className="w-full flex flex-col">
+				<div className="flex flex-col w-full">
 					<Progress title="Home Care" percent={90} />
 					<Progress title="Patient Care" percent={80} />
 					<Progress title="Senior Care" percent={60} />
@@ -49,34 +43,38 @@ const AboutSection = () => {
 						mind and satisfaction."
 					</p>
 				</div>
-				<div className="mt-4 flex items-center justify-between">
-					<Button icon={<FaStethoscope />} primary two>
-						All Services
-					</Button>
-					<div className="text-center">
-						<h2 className="font-medium text-lg italic">Satish Maurya</h2>
+				<div className="flex items-center justify-between gap-4 mt-4">
+
+					<div className="flex-1">
+						<img src={logoname} alt="Care Zone"/>
+					</div>
+					<div className="flex-1 text-center">
+						<h2 className="text-lg italic font-medium">Satish Maurya</h2>
 						<p className="text-primary">Founder</p>
 					</div>
 				</div>
 			</div>
-			<div className="flex-1 flex gap-4">
+			<div className="flex flex-1 gap-4">
 				<div className="flex-1">
 					<img
-						className="w-full h-full object-cover rounded-xl shadow-xl"
-						src="https://templatekit.jegtheme.com/nursera/wp-content/uploads/sites/216/elementor/thumbs/male-nurse-helping-senior-woman-with-walking-stick-pgv084s5knxvjh793l301vphth8su6gr3a2obtbchs.jpg"
-						alt="helping nurse"
+						className="object-cover w-full h-full shadow-xl rounded-xl"
+						src={aboutFirst}
+						loading="lazy"
+						alt="about-first"
 					/>
 				</div>
-				<div className="flex-1 flex flex-col gap-4">
+				<div className="flex flex-col flex-1 gap-4">
 					<img
-						className="w-full h-full object-cover rounded-xl shadow-xl"
-						src="https://templatekit.jegtheme.com/nursera/wp-content/uploads/sites/216/elementor/thumbs/female-nurse-posing-in-clinic-pgx1ontlkk2n61u1uivv20t6bn9t8z805xxpccd1qa.jpg"
-						alt="nurse"
+						className="object-cover w-full h-full shadow-xl rounded-xl"
+						src={aboutSecond}
+						loading="lazy"
+						alt="about-second"
 					/>
 					<img
-						className="w-full h-full object-cover rounded-xl shadow-xl"
-						src="https://templatekit.jegtheme.com/nursera/wp-content/uploads/sites/216/elementor/thumbs/female-nurse-talking-with-an-old-woman-e1638524560913-pgyr3cgr5ac0qeox03s9a5wi7f38hzhirtci86k3r6.jpg"
-						alt="nurse"
+						className="object-cover w-full h-full shadow-xl rounded-xl"
+						src={aboutThird}
+						loading="lazy"
+						alt="about-third"
 					/>
 				</div>
 			</div>

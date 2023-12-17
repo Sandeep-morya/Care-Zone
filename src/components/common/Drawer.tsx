@@ -1,17 +1,16 @@
 ﻿import { useCallback, useEffect, useState, MouseEvent } from "react";
 import { twMerge } from "tailwind-merge";
-
+import DrawerContent from "./DrawerContent";
+import logo from "../../assets/logo.png"
 interface Props {
 	right?: boolean;
 	slideEffect?: number;
-	content: JSX.Element;
 	withScrollbar?: boolean;
 	toggleDrawer: () => void;
 	animationDuration?: number;
 }
 
 const Drawer = ({
-	content,
 	right,
 	toggleDrawer,
 	withScrollbar,
@@ -57,16 +56,16 @@ const Drawer = ({
 					} dark:bg-dark`,
 					isDrawerOpen && (right ? "right-0" : "left-0"),
 				)}>
-				<div className="flex justify-between items-center mt-8 px-4 py-4">
+				<div className="flex items-center justify-between px-4 py-4 mt-8">
 					<img
-						className="w-[120px]"
-						src="https://templatekit.jegtheme.com/nursera/wp-content/uploads/sites/216/2021/12/logo-GCEA9T.png"
+						className="w-[160px]"
+						src={logo}
 						alt="logo"
 					/>
 
 					<div
 						onClick={handleClose}
-						className="w-10 mr-4 text-white font-bold flex justify-center items-center rounded-md aspect-square bg-primary">
+						className="flex items-center justify-center w-10 mr-4 font-bold text-white rounded-md aspect-square bg-primary">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							width={"12px"}
@@ -84,7 +83,7 @@ const Drawer = ({
 						</svg>
 					</div>
 				</div>
-				{content}
+				<DrawerContent toggle={handleClose}/>
 
 			</article>
 

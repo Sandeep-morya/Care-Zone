@@ -4,9 +4,13 @@ import ContactData from "./ui/ContactData";
 import { FaRegHospital, FaAddressBook } from "react-icons/fa";
 import { FaPhoneVolume } from "react-icons/fa6";
 
-const Header = ({ target }: { target: (node?: Element | null | undefined) => void }) => {
+const Header = ({
+	target,
+}: {
+	target: (node?: Element | null | undefined) => void;
+}) => {
 	return (
-		<header className="flex justify-between px-4 py-6 border-b lg:px-0 lg:mx-12 xl:mx-28">
+		<header className="flex justify-between px-4 py-6 border-b lg:px-12 xl:px-28">
 			<div ref={target} className="m-auto lg:m-0">
 				<Logo />
 			</div>
@@ -14,19 +18,23 @@ const Header = ({ target }: { target: (node?: Element | null | undefined) => voi
 				<div className="flex items-center gap-12 mr-20">
 					<ContactData
 						icon={<FaRegHospital />}
-						title={"Lower Ground Floor, Shop No 2"}
+						title={"Lower Ground Floor, Shop No. 2"}
 						value={"Golf City Lucknow - 226001"}
 					/>
 					<ContactData
-						icon={<FaPhoneVolume />}
+						icon={
+							<a href="tel:9336622773">
+								<FaPhoneVolume />
+							</a>
+						}
 						title={"Phone Number"}
 						value={"+91 9336622773"}
 						value2="+91 9984713288"
 					/>
 				</div>
-				<div className="m-auto">
+				<a href="#contact-us" className="m-auto">
 					<Button icon={<FaAddressBook />}>Make Appointment</Button>
-				</div>
+				</a>
 			</div>
 		</header>
 	);

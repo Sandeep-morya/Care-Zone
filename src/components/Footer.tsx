@@ -4,20 +4,20 @@ import QuickLinks from "./footer/QuickLinks";
 import WorkHours from "./footer/WorkHours";
 import Button from "./ui/Button";
 import BusinessHours from "./footer/BusinessHours";
-
+import full_logo from "../assets/full-logo-filled.png"
 const Footer = () => {
 	return (
-		<footer className="bg-secondary pb-8 lg:p-12">
+		<footer id="contact-us" className="pb-8 bg-secondary lg:p-12">
 			<div className="p-4 lg:pt-0 lg:flex lg:justify-between">
 				<div>
 					<div className="w-full">
 						<img
-							className="w-[320px] py-6 lg:w-[200px]"
-							src="https://templatekit.jegtheme.com/nursera/wp-content/uploads/sites/216/2021/12/logo-2-768x225.png"
+							className="w-[120px] aspect-square my-6 rounded-lg"
+							src={full_logo}
 							alt="care-zone-logo"
 						/>
 					</div>
-					{/* <p className="text-lightwhite mt-2">
+					{/* <p className="mt-2 text-lightwhite">
 						Lorem ipsum dolor adipiscing elit, sed do eiusmod
 					</p> */}
 					<Contacts />
@@ -27,15 +27,15 @@ const Footer = () => {
 					<QuickLinks />
 					<div>
 						<WorkHours />
-						<div className="py-8">
+						<a href="tel:9336622773" className="py-8">
 							<Button primary icon={<FaPhone />}>
 								Call Us Today
 							</Button>
-						</div>
+						</a>
 					</div>
 				</div>
 			</div>
-			<div className="flex flex-col items-center text-white/20 gap-1 text-sm border-t border-white/20">
+			<div className="flex flex-col items-center gap-1 text-sm border-t text-white/20 border-white/20">
 				<p className="mt-6">
 					{"CARE ZONE - (Home Nursing Services)"}
 				</p>

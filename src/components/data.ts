@@ -1,6 +1,9 @@
 ﻿import { FaHospitalUser } from "react-icons/fa";
 import { FaUserDoctor, FaUserNurse, FaPeopleGroup } from "react-icons/fa6";
 import { SlBadge } from "react-icons/sl";
+import serviceFirst from "../assets/web-images/service-first.jpg";
+import serviceSecond from "../assets/web-images/service-second.jpg";
+import serviceThird from "../assets/web-images/service-third.jpg";
 
 export const servicesData2 = [
 	{ Icon: FaPeopleGroup, count: 100, title: "Happy Patients" },
@@ -11,8 +14,7 @@ export const servicesData2 = [
 
 export const servicesData = [
 	{
-		image:
-			"https://templatekit.jegtheme.com/nursera/wp-content/uploads/sites/216/elementor/thumbs/nurse-serving-breakfast-to-senior-man-e1638524571723-pgyr3mt1fejm2dmjor557r94ien5mcf2f3ep2id15c.jpg",
+		image: serviceFirst,
 		icon: FaHospitalUser,
 		title: "Home Care",
 		description:
@@ -22,8 +24,7 @@ export const servicesData = [
 		},
 	},
 	{
-		image:
-			"https://templatekit.jegtheme.com/nursera/wp-content/uploads/sites/216/elementor/thumbs/female-nurse-in-nursing-home-e1638524580355-pgyr3v9l4wv6yva9bcssc749uvhgjmcng9a2e00hlc.jpg",
+		image: serviceSecond,
 		icon: FaUserNurse,
 		title: "Senior Care",
 		description:
@@ -33,8 +34,7 @@ export const servicesData = [
 		},
 	},
 	{
-		image:
-			"https://templatekit.jegtheme.com/nursera/wp-content/uploads/sites/216/elementor/thumbs/caring-for-disabled-person-in-clinic-rehabilitation-center-and-home-e1638524664128-pgyr62812zva243kiaxg5n6zr8oai723r42up8rf2o.jpg",
+		image: serviceThird,
 		icon: FaUserDoctor,
 		title: "Intensive Care",
 		description:
