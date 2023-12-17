@@ -22,7 +22,7 @@ const App = () => {
 			<AboutSection />
 			<ContactSection />
 			<Signature />
-      <LocationView/>
+			<LocationView />
 			<Footer />
 		</main>
 	);

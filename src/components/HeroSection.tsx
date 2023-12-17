@@ -1,9 +1,10 @@
 ﻿import Button from "./ui/Button";
-import { FaAddressBook } from "react-icons/fa6";
 // import SocailIcons from "./ui/SocailIcons";
 import { useInView } from "react-intersection-observer";
 import { twMerge } from "tailwind-merge";
-import hero_image from "../assets/web-images/hero-image.jpg"
+import hero_image from "../assets/web-images/hero-image.jpg";
+import { FaPhoneAlt } from "react-icons/fa";
+
 export const HeroSection = () => {
 	const { ref, inView } = useInView();
 	return (
@@ -40,7 +41,7 @@ export const HeroSection = () => {
 						familiarity of home."
 					</p>
 					<a href="tel:9336622773" className="mt-4">
-						<Button primary two icon={<FaAddressBook />}>
+						<Button primary two icon={<FaPhoneAlt />}>
 							Call us Today
 						</Button>
 					</a>

@@ -19,7 +19,7 @@ const Header = ({
 					<ContactData
 						icon={<FaRegHospital />}
 						title={"Lower Ground Floor, Shop No. 2"}
-						value={"Golf City Lucknow - 226001"}
+						value={"Golf City Lucknow - 226002"}
 					/>
 					<ContactData
 						icon={

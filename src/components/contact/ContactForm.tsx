@@ -1,6 +1,6 @@
 ﻿// import React from "react";
 
-import { FaCalendar, FaCalendarCheck, FaPhone, FaUser } from "react-icons/fa";
+import { FaCalendar, FaCalendarCheck, FaPhoneAlt, FaUser } from "react-icons/fa";
 import Input from "./Input";
 import { useState } from "react";
 import Button from "../ui/Button";
@@ -30,7 +30,7 @@ const ContactForm = () => {
 						onChange={(e) => setName(e.target.value)}
 					/>
 					<Input
-						leftIcon={<MdOutlineEmail />}
+						leftIcon={<div className="text-2xl"><MdOutlineEmail /></div>}
 						label="Email"
 						type="email"
 						placeholder="Email Address"
@@ -40,7 +40,7 @@ const ContactForm = () => {
 				</div>
 				<div className="flex flex-col gap-6 lg:flex-row">
 					<Input
-						leftIcon={<FaPhone />}
+						leftIcon={<FaPhoneAlt />}
 						label="Mobile"
 						type="tel"
 						placeholder="Mobile Number"
