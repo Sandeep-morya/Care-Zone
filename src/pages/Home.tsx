@@ -1,23 +1,22 @@
-﻿import { lazy, Suspense/* , useEffect, useState */ } from "react";
+﻿import { lazy, Suspense, useEffect, useState } from "react";
 import LoaderScreen from "../components/LoaderScreen";
 
 const App = lazy(() => import("../App"));
 
 const Home = () => {
-	// const [showComponent, setShowComponent] = useState(false);
+	const [showComponent, setShowComponent] = useState(false);
 
-	// useEffect(() => {
-	// 	const timer = setTimeout(() => {
-	// 		setShowComponent(true);
-	// 	}, 300); // Adjust the delay time as needed
+	useEffect(() => {
+		const timer = setTimeout(() => {
+			setShowComponent(true);
+		}, 300); // Adjust the delay time as needed
 
-	// 	return () => clearTimeout(timer);
-	// }, []);
+		return () => clearTimeout(timer);
+	}, []);
 
 	return (
 		<Suspense fallback={<LoaderScreen />}>
-			{/* {showComponent ? <App /> : <LoaderScreen />} */}
-			<App />
+			{showComponent ? <App /> : <LoaderScreen />}
 		</Suspense>
 	);
 };
