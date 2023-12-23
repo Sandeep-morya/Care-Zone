@@ -35,7 +35,7 @@ const Card = ({ icon, heading, description }: CardProps) => {
 
 const CardsSection = () => {
 	return (
-		<section className="grid grid-cols-1 gap-4 bg-third lg:grid-cols-3 lg:px-4 lg:py-8">
+		<section className="grid grid-cols-1 gap-4 bg-third lg:grid-cols-3 lg:px-4 lg:py-8 2xl:px-56">
 			{data.map((e) => (
 				<Card key={e.heading} {...e} />
 			))}

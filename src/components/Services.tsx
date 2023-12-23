@@ -7,7 +7,7 @@ import { FaAddressBook } from "react-icons/fa6";
 
 const Services = () => {
 	return (
-		<section id="services" className="px-8 py-20 lg:px-12 xl:px-24">
+		<section id="services" className="px-8 py-20 lg:px-12 xl:px-24 2xl:px-48">
 			<div className="flex flex-col justify-between gap-4 lg:grid lg:grid-cols-[1fr,2fr,1fr] lg:gap-8 xl:gap-12">
 				<div>
 					<h2 className="text-lg font-semibold text-primary">Our Services</h2>

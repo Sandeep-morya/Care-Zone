@@ -8,7 +8,7 @@ const AboutSection = () => {
 	return (
 		<section
 			id="about-us"
-			className="flex flex-col gap-4 px-8 py-20 lg:flex-row lg:gap-12 lg:px-12 xl:px-24">
+			className="flex flex-col gap-4 px-8 py-20 2xl:px-48 lg:flex-row lg:gap-12 lg:px-12 xl:px-24">
 			<div className="flex mt-6 lg:mt-0 lg:w-[40%] flex-col gap-4">
 				<h2 className="text-lg font-semibold text-primary">
 					About
@@ -46,7 +46,7 @@ const AboutSection = () => {
 				<div className="flex items-center justify-between gap-4 mt-4">
 
 					<div className="flex-1">
-						<img src={logoname} alt="Care Zone"/>
+						<img src={logoname} alt="Care Zone" />
 					</div>
 					<div className="flex-1 text-center">
 						<h2 className="text-lg italic font-medium">Satish Maurya</h2>

@@ -10,11 +10,9 @@ const Button = ({ children, primary, icon, two }: Props) => {
 	return (
 		<button
 			className={twMerge(
-				`${
-					primary ? "bg-primary" : "bg-third"
-				} px-8 py-3 lg:py-4 font-semibold text-white rounded-full hover:-translate-y-4 transition ${
-					primary ? "hover:bg-white hover:text-third" : "hover:bg-primary"
-				} shadow flex items-center gap-2 text-sm lg:text-base duration-300  whitespace-nowrap active:scale-95`,
+				`${primary ? "bg-primary" : "bg-third"
+				} px-8 py-3 lg:py-4 font-semibold text-white rounded-full hover:-translate-y-4 transition ${primary ? "hover:bg-white hover:text-third" : "hover:bg-primary"
+				} shadow-xl flex items-center gap-2 text-sm lg:text-base duration-300  whitespace-nowrap active:scale-95`,
 				two && "hover:bg-third hover:text-white",
 			)}>
 			{icon}

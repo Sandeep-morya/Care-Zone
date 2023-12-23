@@ -7,7 +7,7 @@ import BusinessHours from "./footer/BusinessHours";
 import full_logo from "../assets/full-logo-filled.png"
 const Footer = () => {
 	return (
-		<footer id="contact-us" className="pb-8 bg-secondary lg:p-12">
+		<footer id="contact-us" className="pb-8 bg-secondary lg:p-12 2xl:px-48">
 			<div className="p-4 lg:pt-0 lg:flex lg:justify-between">
 				<div>
 					<div className="w-full">
@@ -23,7 +23,7 @@ const Footer = () => {
 					<Contacts />
 				</div>
 				<div className="lg:flex lg:gap-20">
-                    <BusinessHours/>
+					<BusinessHours />
 					<QuickLinks />
 					<div>
 						<WorkHours />
@@ -39,7 +39,7 @@ const Footer = () => {
 				<p className="mt-6">
 					{"CARE ZONE - (Home Nursing Services)"}
 				</p>
-				<p>Copyright ©carezone {new Date().getFullYear() }. All rights reserved.</p>
+				<p>Copyright ©carezone {new Date().getFullYear()}. All rights reserved.</p>
 			</div>
 		</footer>
 	);

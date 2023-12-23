@@ -1,7 +1,7 @@
 ﻿import Logo from "./ui/Logo";
 import Button from "./ui/Button";
 import ContactData from "./ui/ContactData";
-import { FaRegHospital, FaAddressBook } from "react-icons/fa";
+import { FaRegHospital, FaCalendarAlt } from "react-icons/fa";
 import { FaPhoneVolume } from "react-icons/fa6";
 
 const Header = ({
@@ -10,7 +10,7 @@ const Header = ({
 	target: (node?: Element | null | undefined) => void;
 }) => {
 	return (
-		<header className="flex justify-between px-4 py-6 border-b lg:px-12 xl:px-28">
+		<header className="flex justify-between px-4 py-6 border-b lg:px-12 xl:px-24 2xl:px-48">
 			<div ref={target} className="m-auto lg:m-0">
 				<Logo />
 			</div>
@@ -33,7 +33,7 @@ const Header = ({
 					/>
 				</div>
 				<a href="#contact-us" className="m-auto">
-					<Button icon={<FaAddressBook />}>Make Appointment</Button>
+					<Button icon={<FaCalendarAlt />}>Make Appointment</Button>
 				</a>
 			</div>
 		</header>

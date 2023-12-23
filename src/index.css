@@ -26,3 +26,30 @@ header {
 	background-size: cover;
 	background-position: top;
 }
+#call-icon {
+	animation: pulse 1s infinite, ring 2s infinite linear;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+		box-shadow: 0 0 10px rgba(248, 67, 101, 0.7);
+	}
+	50% {
+		transform: scale(1.1);
+		box-shadow: 0 0 50px rgba(248, 67, 101, 0.9);
+	}
+	100% {
+		transform: scale(1);
+		box-shadow: 0 0 10px rgba(248, 67, 101, 0.7);
+	}
+}
+
+@keyframes ring {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

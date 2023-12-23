@@ -19,7 +19,7 @@ const ContactForm = () => {
 	const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0AMobile: ${mobile}%0D%0ADate: ${date}%0D%0AMessage: ${message}`;
 
 	return (
-		<div className="w-[90%] p-6 flex-col gap-6 lg:gap-24 lg:p-12 lg:flex-row flex -translate-y-[200px] lg:-translate-y-1/3 shadow-xl rounded-xl m-auto bg-gray-100">
+		<div className="w-[90%] p-6 flex-col gap-6 lg:gap-24 lg:p-12 lg:flex-row flex -translate-y-[200px] lg:-translate-y-1/3 shadow-2xl rounded-xl m-auto bg-white 2xl:w-[80%]">
 			<div className="flex-col gap-6 flex lg:w-[55%]">
 				<div className="flex flex-col gap-6 lg:flex-row">
 					<Input
@@ -87,7 +87,7 @@ const ContactForm = () => {
 					className="object-cover w-full h-full "
 					src={contact_form_last}
 					alt="happy-face"
-                    loading="lazy"
+					loading="lazy"
 				/>
 				<div className="absolute inset-0 z-10 bg-third/25"></div>
 				div

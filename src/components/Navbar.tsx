@@ -3,6 +3,7 @@ import { FaBars } from "react-icons/fa";
 import Drawer from "./common/Drawer";
 import SocailIcons from "./ui/SocailIcons";
 import { twMerge } from "tailwind-merge";
+import logoname from "../assets/logo.png"
 
 const Navbar = ({ inView }: { inView: boolean }) => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +12,7 @@ const Navbar = ({ inView }: { inView: boolean }) => {
 	return (
 		<nav
 			className={twMerge(
-				"flex sticky z-20 bg-white top-0 items-center justify-between w-full h-16 p-4 lg:h-[4.5rem] lg:px-12 xl:px-28",
+				"flex sticky z-20 bg-white top-0 items-center justify-between w-full h-16 p-4 lg:h-[4.5rem] lg:px-12 xl:px-28 2xl:px-48",
 				!inView && "shadow-xl",
 			)}>
 			<div
@@ -22,7 +23,7 @@ const Navbar = ({ inView }: { inView: boolean }) => {
 			<div className="flex-1 lg:hidden ">
 				{!inView && (
 					<div className="mx-4">
-						<img className="h-10 aspect-square" src={"icon.png"} />
+						<img className="h-10 aspect-square" src={"icon.png"} alt="logo-icon" />
 					</div>
 				)}
 			</div>
@@ -30,26 +31,27 @@ const Navbar = ({ inView }: { inView: boolean }) => {
 			<nav className="items-center hidden lg:flex ">
 				{!inView && (
 					<div className="mr-16">
-						<img className="h-[3.5rem] aspect-square" src={"icon.png"} />
+						{/* <img className="h-[3.5rem] aspect-square" src={"icon.png"} /> */}
+						<img className="h-10" src={logoname} alt="logo-icon" />
 					</div>
 				)}
 				<ul className="flex gap-16 text-sm font-bold">
-					<li className="text-primary hover:bg-black/5">
+					<li className=" text-primary">
 						<a href="#">Home</a>
 					</li>
-					<li className="text-secondary/75 hover:bg-black/5 active:text-primary hover:text-primary ">
+					<li className="text-secondary/75 active:text-primary hover:text-primary ">
 						<a href="#services">Services</a>
 					</li>
-					<li className="text-secondary/75 hover:bg-black/5 active:text-primary hover:text-primary">
+					<li className="text-secondary/75 active:text-primary hover:text-primary">
 						<a href="#about-us">About us</a>
 					</li>
-					<li className="text-secondary/75 hover:bg-black/5 active:text-primary hover:text-primary">
+					<li className="text-secondary/75 active:text-primary hover:text-primary">
 						<a href="#contact-us">Contact us</a>
 					</li>
-					<li className="text-secondary/75 hover:bg-black/5 active:text-primary hover:text-primary">
+					<li className="text-secondary/75 active:text-primary hover:text-primary">
 						<a href="#appointment">Appointment</a>
 					</li>
-					<li className="text-secondary/75 hover:bg-black/5 active:text-primary hover:text-primary">
+					<li className="text-secondary/75 active:text-primary hover:text-primary">
 						<a href="tel:9336622773">Call us</a>
 					</li>
 				</ul>

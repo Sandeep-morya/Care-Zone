@@ -26,15 +26,15 @@ export const HeroSection = () => {
 				className="absolute inset-0 z-10">
 				<div
 					className={twMerge(
-						"w-[90%] md:w-[80%] transition-all duration-[1.5s] lg:w-[60%] opacity-0 -ml-28 xl:w-[50%] p-8 lg:p-16 xl:p-28 text-secondary/75 flex flex-col gap-4",
-						inView && "ml-0 opacity-100",
+						"w-[90%] md:w-[80%] transition-all duration-[1.5s] lg:w-[60%] opacity-0 -ml-28 xl:w-[50%] 2xl:w-[45%] p-8 lg:p-16 xl:p-28 text-secondary/75 flex flex-col gap-4",
+						inView && "ml-0  2xl:ml-20 opacity-100",
 					)}>
-					<h1 style={{textShadow:"0 0 2px #00000055"}} className="text-3xl font-bold tracking-wide lg:text-5xl">
+					<h1 style={{ textShadow: "0 0 2px #00000055" }} className="text-3xl font-bold tracking-wide lg:text-5xl">
 						We Provide Home Care Service For Your Family
 					</h1>
 
 					<p style={{ textShadow: "0 0 2px #00000055" }}>
-						We offer compassionate and personalized home care
+						"We offer compassionate and personalized home care
 						services tailored to the unique needs of your family. Our dedicated
 						professionals prioritize the well-being and comfort of your loved
 						ones, ensuring a nurturing and supportive environment within the
