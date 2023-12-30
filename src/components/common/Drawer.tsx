@@ -1,7 +1,7 @@
 ﻿import { useCallback, useEffect, useState, MouseEvent } from "react";
 import { twMerge } from "tailwind-merge";
-import DrawerContent from "./DrawerContent";
-import logo from "../../assets/logo.png"
+import DrawerContent from "./DrawerContent"
+import LogoVertical from "../logos/LogoVertical";
 interface Props {
 	right?: boolean;
 	slideEffect?: number;
@@ -51,17 +51,14 @@ const Drawer = ({
 			className="fixed flex top-0 left-0 w-screen h-screen z-[500] bg-black/50">
 			<article
 				className={twMerge(
-					`w-[80%] h-full md:w-[400px] pt-1 px-2 bg-gray-50 transition-all ease-out duration-500 absolute ${
-						right ? "-right-[400px]" : "-left-[400px]"
+					`w-[80%] h-full md:w-[400px] pt-1 px-2 bg-gray-50 transition-all ease-out duration-500 absolute ${right ? "-right-[400px]" : "-left-[400px]"
 					} dark:bg-dark`,
 					isDrawerOpen && (right ? "right-0" : "left-0"),
 				)}>
 				<div className="flex items-center justify-between px-4 py-4 mt-8">
-					<img
-						className="w-[160px]"
-						src={logo}
-						alt="logo"
-					/>
+
+					<LogoVertical className="mr-8" />
+
 
 					<div
 						onClick={handleClose}
@@ -83,7 +80,7 @@ const Drawer = ({
 						</svg>
 					</div>
 				</div>
-				<DrawerContent toggle={handleClose}/>
+				<DrawerContent toggle={handleClose} />
 
 			</article>
 

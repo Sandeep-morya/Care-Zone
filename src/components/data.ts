@@ -3,7 +3,7 @@ import { FaUserDoctor, FaUserNurse, FaPeopleGroup } from "react-icons/fa6";
 import { SlBadge } from "react-icons/sl";
 import serviceFirst from "../assets/web-images/service-first.jpg";
 import serviceSecond from "../assets/web-images/service-second.jpg";
-import serviceThird from "../assets/web-images/service-third.jpg";
+import servicesThird from "../assets/web-images/service-third.jpg";
 
 export const servicesData2 = [
 	{ Icon: FaPeopleGroup, count: 100, title: "Happy Patients" },
@@ -34,7 +34,7 @@ export const servicesData = [
 		},
 	},
 	{
-		image: serviceThird,
+		image: servicesThird,
 		icon: FaUserDoctor,
 		title: "Intensive Care",
 		description:

@@ -1,12 +1,11 @@
-﻿import FullLogo from "../assets/full-logo.png"
-const LoaderScreen = () => {
-    return <div className="flex items-center justify-center w-screen h-screen bg-white dark:bg-dark">
-        <img
-            className="w-[200px] aspect-square object-contain drop-shadow-lg"
-            src={FullLogo}
-            alt="Care Zone Logo"
-        />
-    </div>
-}
+﻿import CompleteLogo from "./logos/CompleteLogo";
 
-export default LoaderScreen
+const LoaderScreen = () => {
+    return (
+        <div className="flex items-center justify-center w-screen h-screen bg-white dark:bg-dark">
+            <CompleteLogo className="w-32 h-32" />
+        </div>
+    );
+};
+
+export default LoaderScreen;

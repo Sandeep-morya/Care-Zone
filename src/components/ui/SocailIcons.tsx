@@ -7,7 +7,7 @@ const SocailIcons = () => {
 	return (
 		<ul
 			className="flex items-center gap-4 text-2xl text-primary">
-			<li className="transition hover:text-third"
+			<li className="transition hover:text-text"
 				onClick={visit.bind(
 					this,
 					"https://api.whatsapp.com/send?phone=919336622773",
@@ -15,7 +15,7 @@ const SocailIcons = () => {
 				<FaWhatsapp />
 			</li>
 			<li
-				className="transition hover:text-third"
+				className="transition hover:text-text"
 				onClick={visit.bind(
 					this,
 					"https://www.instagram.com/carezonehomenursing/",
@@ -23,7 +23,7 @@ const SocailIcons = () => {
 				<FaInstagram />
 			</li>
 			<li
-				className="transition hover:text-third"
+				className="transition hover:text-text"
 				onClick={visit.bind(
 					this,
 					"https://www.facebook.com/profile.php?id=61554891712057",
@@ -32,7 +32,7 @@ const SocailIcons = () => {
 			</li>
 
 			{/* <li
-				className="text-2xl transition hover:text-third"
+				className="text-2xl transition hover:text-text"
 				onClick={visit.bind(this, "mailto:nursing@carezonelko.com")}>
 				<MdOutlineEmail />
 			</li> */}

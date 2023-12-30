@@ -1,8 +1,8 @@
-﻿import Logo from "./ui/Logo";
-import Button from "./ui/Button";
+﻿import Button from "./ui/Button";
 import ContactData from "./ui/ContactData";
 import { FaRegHospital, FaCalendarAlt } from "react-icons/fa";
 import { FaPhoneVolume } from "react-icons/fa6";
+import LogoVertical from "./logos/LogoVertical";
 
 const Header = ({
 	target,
@@ -12,7 +12,9 @@ const Header = ({
 	return (
 		<header className="flex justify-between px-4 py-6 border-b lg:px-12 xl:px-24 2xl:px-48">
 			<div ref={target} className="m-auto lg:m-0">
-				<Logo />
+				<div className="w-[80%] m-auto">
+					<LogoVertical className="w-[200px] mt-3 -ml-8 md:-ml-0 " />
+				</div>
 			</div>
 			<div className="hidden lg:flex">
 				<div className="flex items-center gap-12 mr-20">

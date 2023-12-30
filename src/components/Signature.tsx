@@ -10,13 +10,13 @@ const Signature = () => {
 					<div className="text-5xl text-primary">
 						<FaQuoteRight />
 					</div>
-					<p className="text-lg italic font-medium text-secondary/75">
+					<p className="text-lg italic font-medium text-text/75">
 						We provide supportive, compassionate and highly qualified nurses for
 						all your nursing and medical needs
 					</p>
 				</div>
-				<a href="tel:9336622773" className="flex flex-col items-center justify-center p-8 mt-4 transition shadow rounded-xl bg-third active:scale-95">
-					<div id="call-icon" className="w-[65px] rounded-full text-2xl aspect-square flex justify-center items-center bg-primary text-white hover:bg-white hover:text-third">
+				<a href="tel:9336622773" className="flex flex-col items-center justify-center p-8 mt-4 transition shadow rounded-xl bg-secondary active:scale-95">
+					<div id="call-icon" className="w-[65px] rounded-full text-2xl aspect-square flex justify-center items-center bg-primary text-white hover:bg-white hover:text-text">
 						<FaPhoneAlt />
 					</div>
 					<h2 className="mt-4 mb-2 text-lg font-medium text-white">
@@ -29,7 +29,7 @@ const Signature = () => {
 				</div>
 			</div>
 			<div className="flex flex-col lg:w-[50%]">
-				<p className="text-third/75">
+				<p className="text-text/75">
 					We offer various in-home healthcare services like Physiotherapy,
 					Nursing, Attendant/Home Health Aide, Doctor Visit. We will keep on
 					adding more in-home healthcare services with a vision to bring world

@@ -2,13 +2,13 @@
 	icon: JSX.Element;
 	title: string;
 	value: string;
-	value2?:string
+	value2?: string
 }
 
-const ContactData = ({ icon, title, value,value2 }: Props) => {
+const ContactData = ({ icon, title, value, value2 }: Props) => {
 	return (
 		<div className="flex items-center gap-4">
-			<div className="bg-primary hover:bg-third transition active:scale-95 text-white flex justify-center items-center h-[45px] text-xl rounded-full aspect-square">
+			<div className="bg-primary hover:bg-secondary transition active:scale-95 text-white flex justify-center items-center h-[45px] text-xl rounded-full aspect-square">
 				{icon}
 			</div>
 			<div>

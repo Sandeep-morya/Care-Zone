@@ -4,18 +4,14 @@ import QuickLinks from "./footer/QuickLinks";
 import WorkHours from "./footer/WorkHours";
 import Button from "./ui/Button";
 import BusinessHours from "./footer/BusinessHours";
-import full_logo from "../assets/full-logo-filled.png"
+import CompleteLogo from "./logos/CompleteLogo";
 const Footer = () => {
 	return (
 		<footer id="contact-us" className="pb-8 bg-secondary lg:p-12 2xl:px-48">
 			<div className="p-4 lg:pt-0 lg:flex lg:justify-between">
 				<div>
 					<div className="w-full">
-						<img
-							className="w-[120px] aspect-square my-6 rounded-lg"
-							src={full_logo}
-							alt="care-zone-logo"
-						/>
+						<CompleteLogo className="w-32 h-32 p-2 bg-white rounded-md drop-shadow-lg" />
 					</div>
 					{/* <p className="mt-2 text-lightwhite">
 						Lorem ipsum dolor adipiscing elit, sed do eiusmod
@@ -35,13 +31,13 @@ const Footer = () => {
 					</div>
 				</div>
 			</div>
-			<div className="flex flex-col items-center gap-1 text-sm border-t text-white/20 border-white/20">
+			<div className="flex flex-col items-center gap-1 text-sm border-t text-white/50 border-white/20">
 				<p className="mt-6">
 					{"CARE ZONE - (Home Nursing Services)"}
 				</p>
 				<p>Copyright ©carezone {new Date().getFullYear()}. All rights reserved.</p>
 			</div>
-		</footer>
+		</footer >
 	);
 };
 

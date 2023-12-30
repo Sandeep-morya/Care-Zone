@@ -27,10 +27,10 @@ const ServiceCard = ({
                     <Icon />
                 </div>
                 <div className="flex flex-col items-center gap-4 px-8 text-center -translate-y-4">
-                    <h2 className="text-xl font-semibold text-third group-hover:text-white">
+                    <h2 className="text-xl font-semibold text-text group-hover:text-white">
                         {title}
                     </h2>
-                    <p className="text-sm text-third/75 group-hover:text-white/75">
+                    <p className="text-sm text-text/75 group-hover:text-white/75">
                         {description}
                     </p>
                     <div className="bg-primary w-[30%] rounded-full h-1"></div>

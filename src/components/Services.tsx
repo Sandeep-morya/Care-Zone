@@ -11,11 +11,11 @@ const Services = () => {
 			<div className="flex flex-col justify-between gap-4 lg:grid lg:grid-cols-[1fr,2fr,1fr] lg:gap-8 xl:gap-12">
 				<div>
 					<h2 className="text-lg font-semibold text-primary">Our Services</h2>
-					<h3 className="text-2xl font-bold text-third">
+					<h3 className="text-2xl font-bold text-text">
 						What Service We Provide
 					</h3>
 				</div>
-				<div className="text-third/50">
+				<div className="text-text/50">
 					<p>
 						Explore CareZone's comprehensive healthcare services, addressing a variety of needs, tailored to prioritize your well-being and ensure personalized care excellence.
 					</p>
@@ -31,7 +31,7 @@ const Services = () => {
 				))}
 			</div>
 
-			{/* <div className="grid w-full grid-cols-2 p-4 border lg:grid-cols-4 bg-third rounded-xl">
+			{/* <div className="grid w-full grid-cols-2 p-4 border lg:grid-cols-4 bg-secondary rounded-xl">
 				{servicesData2.map((e) => (
 					<Card key={e.title} {...e} />
 				))}

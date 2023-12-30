@@ -4,20 +4,20 @@ import { twMerge } from "tailwind-merge";
 interface Props extends InputHTMLAttributes<HTMLInputElement> {
     leftIcon: ReactNode;
     rightIcon?: ReactNode;
-    label?:string;
-    type?:string;
+    label?: string;
+    type?: string;
 }
 
 const Input = (props: Props) => {
     const [focus, setFocus] = useState(false);
     return (
-       <div className="flex flex-col gap-2">
-        {props.label &&<label className="font-medium">{props.label}</label>}
+        <div className="flex flex-col gap-2">
+            {props.label && <label className="font-medium">{props.label}</label>}
             <div
                 role="Input-box"
                 className={twMerge(
                     "flex items-center gap-4 h-[45px] w-full border rounded-md overflow-hidden bg-white shadow-sm dark:bg-moredark dark:border-moredark dark:text-lightwhite",
-                    focus && "outline-1 outline outline-third  dark:outline-lightwhite",
+                    focus && "outline-1 outline outline-secondary  dark:outline-lightwhite",
                 )}>
                 {props.leftIcon && <div className="pl-4 text-primary">{props.leftIcon}</div>}
 
@@ -37,7 +37,7 @@ const Input = (props: Props) => {
                     {props.rightIcon}
                 </div>
             </div>
-       </div>
+        </div>
     );
 };
 

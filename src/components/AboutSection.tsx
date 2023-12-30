@@ -1,8 +1,9 @@
 ﻿import Progress from "./about/Progress";
-import logoname from "../assets/logoname.png";
+// import logoname from "../assets/logoname.png";
 import aboutFirst from "../assets/web-images/about-first.jpg";
 import aboutSecond from "../assets/web-images/about-second.jpg";
 import aboutThird from "../assets/web-images/about-third.jpg";
+import LogoName from "./logos/LogoName";
 
 const AboutSection = () => {
 	return (
@@ -46,7 +47,7 @@ const AboutSection = () => {
 				<div className="flex items-center justify-between gap-4 mt-4">
 
 					<div className="flex-1">
-						<img src={logoname} alt="Care Zone" />
+						<LogoName />
 					</div>
 					<div className="flex-1 text-center">
 						<h2 className="text-lg italic font-medium">Satish Maurya</h2>
