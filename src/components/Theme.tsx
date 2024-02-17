@@ -1,7 +1,6 @@
 ﻿import { useEffect, useState } from "react";
-import { PiCaretLeftBold, PiCaretRightBold } from "react-icons/pi";
+import { PiCaretRightBold } from "react-icons/pi";
 import { twMerge } from "tailwind-merge";
-import useVisit from "../hooks/useVisit";
 
 const themes = {
     default: {
@@ -24,11 +23,10 @@ const Theme = () => {
     return (
         <div
             className={twMerge(
-                "fixed left-0 bottom-10 transition duration-500  flex px-2 gap-4 bg-white/10 backdrop-blur-sm z-50 rounded-r-full shadow -translate-x-[4.5rem]",
+                "fixed left-0 bottom-10 transition duration-500  flex gap-4 bg-white/10 backdrop-blur-sm z-50 rounded-r-full shadow -translate-x-[4.5rem]",
                 showTheme && "translate-x-0",
             )}>
-            {/*  */}
-            <div className="h-8  flex justify-end items-center">
+            <div className="h-8  flex pl-1  items-center">
                 <a href="https://carezone.netlify.app/" className="flex justify-center items-center h-full">
                     <div style={{ backgroundColor: themes.new.primary }} className="h-1/2 aspect-square rounded-full translate-x-1 bg-primary" />
                     <div style={{ backgroundColor: themes.new.secondary }} className="h-1/2 aspect-square rounded-full bg-secondary" />
@@ -37,8 +35,9 @@ const Theme = () => {
                     <div style={{ backgroundColor: themes.default.primary }} className="h-1/2 aspect-square rounded-full translate-x-1" />
                     <div style={{ backgroundColor: themes.default.secondary }} className="h-1/2 aspect-square rounded-full bg-secondary" />
                 </a>
-
-                <div onClick={toggle}>{showTheme ? <PiCaretLeftBold /> : <PiCaretRightBold />}</div>
+                <div onClick={toggle} className={twMerge("transition-all px-2 duration-500 hover:text-primary", showTheme && "rotate-180")}>
+                    <PiCaretRightBold />
+                </div>
             </div>
         </div>
     );
