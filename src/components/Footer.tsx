@@ -5,6 +5,7 @@ import WorkHours from "./footer/WorkHours";
 import Button from "./ui/Button";
 import BusinessHours from "./footer/BusinessHours";
 import CompleteLogo from "./logos/CompleteLogo";
+
 const Footer = () => {
 	return (
 		<footer id="contact-us" className="pb-8 bg-secondary lg:p-12 2xl:px-48">
@@ -36,6 +37,7 @@ const Footer = () => {
 					{"CARE ZONE - (Home Nursing Services)"}
 				</p>
 				<p>Copyright ©carezone {new Date().getFullYear()}. All rights reserved.</p>
+				<p className="self-center lg:self-end">Crafted by <a href="https://sandeep-morya.vercel.app/" target="_blank">@Sandeep-Maurya</a></p>
 			</div>
 		</footer >
 	);
