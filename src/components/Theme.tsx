@@ -27,13 +27,13 @@ const Theme = () => {
                 showTheme && "translate-x-0",
             )}>
             <div className="h-8  flex pl-1  items-center">
-                <a href="https://carezonelko.com/" className="flex justify-center items-center h-full">
+                <a href="https://www.carezonelko.com/" className="flex justify-center items-center h-full">
                     <div style={{ backgroundColor: themes.default.primary }} className="h-1/2 aspect-square rounded-full translate-x-1" />
-                    <div style={{ backgroundColor: themes.default.secondary }} className="h-1/2 aspect-square rounded-full bg-secondary" />
+                    <div style={{ backgroundColor: themes.default.secondary }} className="h-1/2 aspect-square rounded-full" />
                 </a>
-                <a href="https://carezone.netlify.app/" className="flex justify-center items-center h-full">
-                    <div style={{ backgroundColor: themes.new.primary }} className="h-1/2 aspect-square rounded-full translate-x-1 bg-primary" />
-                    <div style={{ backgroundColor: themes.new.secondary }} className="h-1/2 aspect-square rounded-full bg-secondary" />
+                <a href="https://new.carezonelko.com/" className="flex justify-center items-center h-full">
+                    <div style={{ backgroundColor: themes.new.primary }} className="h-1/2 aspect-square rounded-full translate-x-1" />
+                    <div style={{ backgroundColor: themes.new.secondary }} className="h-1/2 aspect-square rounded-full" />
                 </a>
                 <div onClick={toggle} className={twMerge("transition-all px-2 duration-500 hover:text-primary", showTheme && "rotate-180")}>
                     <PiCaretRightBold />
