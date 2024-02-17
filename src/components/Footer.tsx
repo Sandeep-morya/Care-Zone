@@ -40,6 +40,7 @@ const Footer = () => {
 					{"CARE ZONE - (Home Nursing Services)"}
 				</p>
 				<p>Copyright ©carezone {new Date().getFullYear()}. All rights reserved.</p>
+				<p className="self-center lg:self-end">Crafted by <a href="https://sandeep-morya.vercel.app/" target="_blank">@Sandeep-Maurya</a></p>
 			</div>
 		</footer>
 	);
