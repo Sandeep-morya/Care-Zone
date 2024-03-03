@@ -4,11 +4,13 @@ interface Props extends PropsWithChildren {
 	primary?: boolean;
 	icon?: JSX.Element;
 	two?: boolean;
+	onClick?: () => void;
 }
 
-const Button = ({ children, primary, icon, two }: Props) => {
+const Button = ({ children, onClick, primary, icon, two }: Props) => {
 	return (
 		<button
+			onClick={onClick}
 			className={twMerge(
 				`${primary ? "bg-primary" : "bg-secondary"
 				} px-8 py-3 lg:py-4 font-semibold text-white rounded-full hover:-translate-y-4 transition ${primary ? "hover:bg-white hover:text-text" : "hover:bg-primary"

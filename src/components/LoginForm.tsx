@@ -1,17 +1,15 @@
-﻿import { Dispatch, SetStateAction, useState } from 'react';
+﻿import { useState } from 'react';
 import SvgImage from './ui/SvgImage';
-interface Props {
-    auth: boolean;
-    setAuth: Dispatch<SetStateAction<boolean>>
-}
+import useAuth from '../hooks/useAuth';
 
-const LoginForm = ({ auth, setAuth }: Props) => {
+const LoginForm = () => {
+    const { auth, setAuth } = useAuth()
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("")
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        if (username === "Admin" && password === "Saabnctdoesfhg") {
+        if (username === "Admin" && password === "admin") {
             setAuth(true);
             sessionStorage.setItem("carezone-auth", "true");
         } else {
@@ -20,7 +18,7 @@ const LoginForm = ({ auth, setAuth }: Props) => {
         }
     }
     return (
-        <div id='login' className="flex flex-col md:flex-row">
+        <div id='#' className="flex flex-col md:flex-row">
 
             <div className="lg:flex items-center justify-center flex-1 bg-white text-black">
                 <div className="max-w-md text-center">
@@ -28,7 +26,7 @@ const LoginForm = ({ auth, setAuth }: Props) => {
                 </div>
             </div>
 
-            <div className="w-full bg-gray-100 lg:w-1/2 flex items-center justify-center">
+            <div className="w-full bg-black/5 lg:w-1/2 flex items-center justify-center">
                 <div className="max-w-md w-full p-6">
 
                     {auth ?

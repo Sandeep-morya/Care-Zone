@@ -1,11 +1,11 @@
 ﻿
 
-interface Props{
-    title:string
+interface Props {
+    title: string
 }
 
-const FooterHeading = ({title}:Props) => {
-    return <div className='w-[160px]'>
+const FooterHeading = ({ title }: Props) => {
+    return <div className='w-max'>
         <h2 className='font-semibold text-xl'>{title}</h2>
         <div className='w-full h-[2px] bg-primary my-4'></div>
     </div>

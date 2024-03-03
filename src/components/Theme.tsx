@@ -31,10 +31,10 @@ const Theme = () => {
                     <div style={{ backgroundColor: themes.default.primary }} className="h-1/2 aspect-square rounded-full translate-x-1" />
                     <div style={{ backgroundColor: themes.default.secondary }} className="h-1/2 aspect-square rounded-full" />
                 </a>
-                <a href="https://new.carezonelko.com/" className="flex justify-center items-center h-full">
+                {/* <a href="https://new.carezonelko.com/" className="flex justify-center items-center h-full">
                     <div style={{ backgroundColor: themes.new.primary }} className="h-1/2 aspect-square rounded-full translate-x-1" />
                     <div style={{ backgroundColor: themes.new.secondary }} className="h-1/2 aspect-square rounded-full" />
-                </a>
+                </a> */}
                 <div onClick={toggle} className={twMerge("transition-all px-2 duration-500 hover:text-primary", showTheme && "rotate-180")}>
                     <PiCaretRightBold />
                 </div>

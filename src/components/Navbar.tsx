@@ -1,10 +1,10 @@
 ﻿import { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import Drawer from "./common/Drawer";
-import SocailIcons from "./ui/SocailIcons";
 import { twMerge } from "tailwind-merge";
 import Logo from "./logos/Logo";
 import LogoVertical from "./logos/LogoVertical";
+import { Link } from "react-router-dom";
 
 
 const Navbar = ({ inView }: { inView: boolean }) => {
@@ -38,29 +38,27 @@ const Navbar = ({ inView }: { inView: boolean }) => {
 				)}
 				<ul className="flex gap-16 text-sm font-bold">
 					<li className=" text-primary">
-						<a href="#">Home</a>
+						<Link to="/">Dashboard</Link>
 					</li>
 					<li className="text-text/75 active:text-primary hover:text-primary ">
-						<a href="#services">Services</a>
+						<Link to="/new-patient">Patient Register</Link>
 					</li>
 					<li className="text-text/75 active:text-primary hover:text-primary">
-						<a href="#about-us">About us</a>
+						<Link to="/new-staff">Staff Register</Link>
 					</li>
 					<li className="text-text/75 active:text-primary hover:text-primary">
-						<a href="#contact-us">Contact us</a>
+						<Link to="/service-bill">Generate Service Bill</Link>
 					</li>
 					<li className="text-text/75 active:text-primary hover:text-primary">
-						<a href="#appointment">Appointment</a>
+						<Link to="/expense-bill">Generate Expenses Bill</Link>
 					</li>
-					<li className="text-text/75 active:text-primary hover:text-primary">
-						<a href="tel:9336622773">Call us</a>
-					</li>
+
 				</ul>
 			</nav>
-			<div className="flex items-center gap-4">
+			{/* <div className="flex items-center gap-4">
 				{inView && <p className="font-semibold text-text">Follow Us:</p>}
 				<SocailIcons />
-			</div>
+			</div> */}
 			{isOpen && (
 				<Drawer
 					toggleDrawer={toggleDrawer}
