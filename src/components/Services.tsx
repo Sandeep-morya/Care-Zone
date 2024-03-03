@@ -29,7 +29,13 @@ const Services = () => {
 				{servicesData.map((e) => (
 					<ServiceCard key={e.title} {...e} />
 				))}
+
 			</div>
+			{/* <div className="flex flex-col gap-4 lg:gap-8 lg:flex-row">
+				{servicesData.map((e) => (
+					<ServiceCard key={e.title} {...e} />
+				))}
+			</div> */}
 
 			{/* <div className="grid w-full grid-cols-2 p-4 border lg:grid-cols-4 bg-third rounded-xl">
 				{servicesData2.map((e) => (

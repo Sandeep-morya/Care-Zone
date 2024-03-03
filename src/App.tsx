@@ -9,13 +9,12 @@ import AboutSection from "./components/AboutSection";
 import Signature from "./components/Signature";
 import { useInView } from "react-intersection-observer";
 import LocationView from "./components/LocationView";
-import Theme from "./components/Theme";
 
 const App = () => {
 	const { ref, inView } = useInView();
 	return (
 		<main>
-			<Theme />
+			{/* <Theme /> */}
 			<Header target={ref} />
 			<Navbar inView={inView} />
 			<HeroSection />

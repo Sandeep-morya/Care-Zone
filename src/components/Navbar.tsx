@@ -52,7 +52,7 @@ const Navbar = ({ inView }: { inView: boolean }) => {
 						<a href="#appointment">Appointment</a>
 					</li>
 					<li className="text-secondary/75 active:text-primary hover:text-primary">
-						<a href="tel:9336622773">Call us</a>
+						<a href="tel:8887166889">Call us</a>
 					</li>
 				</ul>
 			</nav>

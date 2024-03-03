@@ -7,7 +7,7 @@ import BusinessHours from "./footer/BusinessHours";
 import full_logo from "../assets/full-logo-filled.png"
 const Footer = () => {
 	return (
-		<footer id="contact-us" className="pb-8 bg-secondary lg:p-12 2xl:px-48">
+		<footer id="contact-us" className="pb-8 bg-secondary lg:p-12 2xl:px-24">
 			<div className="p-4 lg:pt-0 lg:flex lg:justify-between">
 				<div>
 					<div className="w-full">
@@ -27,12 +27,14 @@ const Footer = () => {
 					<QuickLinks />
 					<div>
 						<WorkHours />
-						<a href="tel:9336622773" className="py-8">
+
+						<a href="tel:8887166889" className="py-8">
 							<Button primary icon={<FaPhone />}>
 								Call Us Today
 							</Button>
 						</a>
 					</div>
+
 				</div>
 			</div>
 			<div className="flex flex-col items-center gap-1 text-sm border-t text-white/20 border-white/20">

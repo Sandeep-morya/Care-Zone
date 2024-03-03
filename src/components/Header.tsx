@@ -10,7 +10,7 @@ const Header = ({
 	target: (node?: Element | null | undefined) => void;
 }) => {
 	return (
-		<header className="flex justify-between px-4 py-6 border-b lg:px-12 xl:px-24 2xl:px-48">
+		<header className="flex justify-between px-4 py-6 border-b lg:px-12 xl:px-12 2xl:px-24">
 			<div ref={target} className="m-auto lg:m-0">
 				<Logo />
 			</div>
@@ -18,18 +18,18 @@ const Header = ({
 				<div className="flex items-center gap-12 mr-20">
 					<ContactData
 						icon={<FaRegHospital />}
-						title={"Lower Ground Floor, Shop No. 2"}
-						value={"Golf City Lucknow - 226002"}
+						title={"INFRONT OF MEDANTA HOSPITAL GATE NO.5"}
+						value={"NEAR VEERE DA DHABA,GOLF CITY LUCKNOW 226002"}
 					/>
 					<ContactData
 						icon={
-							<a href="tel:9336622773">
+							<a href="tel:8887166889">
 								<FaPhoneVolume />
 							</a>
 						}
 						title={"Phone Number"}
-						value={"+91 9336622773"}
-						value2="+91 9984713288"
+						value={"+91 8887166889"}
+						value2="+91 9336622773"
 					/>
 				</div>
 				<a href="#contact-us" className="m-auto">
