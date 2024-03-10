@@ -2,7 +2,7 @@
 
 const Footer = () => {
 	return (
-		<footer id="contact-us" className="pb-8 bg-secondary lg:p-12 2xl:px-48">
+		<footer id="contact-us" className="pb-8 bg-secondary lg:p-12 2xl:px-48 mt-24">
 			<div className="p-4 lg:pt-0 lg:flex  lg:justify-between">
 
 				<div className="w-full flex justify-center ">

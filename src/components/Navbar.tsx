@@ -40,9 +40,9 @@ const Navbar = ({ inView }: { inView: boolean }) => {
 					<li className=" text-primary">
 						<Link to="/">Dashboard</Link>
 					</li>
-					<li className="text-text/75 active:text-primary hover:text-primary ">
+					{/* <li className="text-text/75 active:text-primary hover:text-primary ">
 						<Link to="/new-patient">Patient Register</Link>
-					</li>
+					</li> */}
 					<li className="text-text/75 active:text-primary hover:text-primary">
 						<Link to="/new-staff">Staff Register</Link>
 					</li>

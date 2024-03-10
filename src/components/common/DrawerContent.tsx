@@ -7,9 +7,9 @@ const DrawerContent = ({ toggle }: { toggle: () => void }) => {
 				<li onClick={toggle} className="p-3 text-primary hover:bg-black/5">
 					<Link to="/">Dashboard</Link>
 				</li>
-				<li onClick={toggle} className="p-3 text-text/75 hover:bg-black/5 active:text-primary hover:text-primary ">
+				{/* <li onClick={toggle} className="p-3 text-text/75 hover:bg-black/5 active:text-primary hover:text-primary ">
 					<Link to="/new-patient">Patient Register</Link>
-				</li>
+				</li> */}
 				<li onClick={toggle} className="p-3 text-text/75 hover:bg-black/5 active:text-primary hover:text-primary">
 					<Link to="/new-staff">Staff Register</Link>
 				</li>

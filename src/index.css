@@ -7,12 +7,7 @@ html {
 }
 header {
 	background-color: #ffffff;
-	background: linear-gradient(
-			45deg,
-			transparent 49%,
-			#eeeeee 49% 51%,
-			transparent 51%
-		),
+	background: linear-gradient(45deg, transparent 49%, #eeeeee 49% 51%, transparent 51%),
 		linear-gradient(-45deg, transparent 49%, #eeeeee 49% 51%, transparent 51%);
 	background-size: 3em 3em;
 	background-color: #ffffff;
@@ -51,5 +46,21 @@ header {
 	}
 	100% {
 		transform: rotate(360deg);
+	}
+}
+
+#no-divide::before {
+	content: "";
+	display: block;
+	height: 0;
+	border-top: none;
+}
+
+@media print {
+	.bill-container {
+		min-width: 1080px;
+	}
+	* {
+		line-height: -1rem;
 	}
 }
