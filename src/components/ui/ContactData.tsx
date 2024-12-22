@@ -12,9 +12,9 @@ const ContactData = ({ icon, title, value, value2 }: Props) => {
 				{icon}
 			</div>}
 			<div>
-				<h3 className="font-semibold ">{title}</h3>
-				<p className="opacity-50">{value}</p>
-				{value2 && <p className="opacity-50">{value2}</p>}
+				<h3 className="font-semibold text-sm">{title}</h3>
+				<p className="opacity-50 capitalize text-sm">{value}</p>
+				{value2 && <p className="opacity-50 capitalize text-sm">{value2}</p>}
 			</div>
 		</div>
 	);

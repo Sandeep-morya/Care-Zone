@@ -15,7 +15,7 @@ const Header = ({
 				<Logo />
 			</div>
 			<div className="hidden lg:flex">
-				<div className="flex items-center gap-12 mr-20">
+				<div className="flex items-center gap-8 mr-10">
 					<ContactData
 						icon={<FaRegHospital />}
 						title={"INFRONT OF MEDANTA HOSPITAL GATE NO.5"}
@@ -27,7 +27,7 @@ const Header = ({
 								<FaPhoneVolume />
 							</a>
 						}
-						title={"Phone Number"}
+						title={""}
 						value={"+91 8887166889"}
 						value2="+91 9336622773"
 					/>

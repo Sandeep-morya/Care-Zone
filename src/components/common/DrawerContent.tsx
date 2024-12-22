@@ -37,7 +37,7 @@ const DrawerContent = ({ toggle }: { toggle: () => void }) => {
 							<FaPhoneVolume />
 						</a>
 					}
-					title={"Phone Number"}
+					title={""}
 					value={"+91 8887166889"}
 					value2="+91 9336622773"
 				/>
