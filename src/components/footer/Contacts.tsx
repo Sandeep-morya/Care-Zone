@@ -8,8 +8,8 @@ const Contacts = () => {
             <FooterHeading title="Office Address" />
             <div className="flex items-center gap-4">
                 <div className="text-xl text-primary"><FaLocationDot /></div>
-                <p className="text-white/80">INFRONT OF MEDANTA HOSPITAL GATE NO.5,
-                    <br /> NEAR VEERE DA DHABA,GOLF CITY LUCKNOW,226002</p>
+                <p className="text-white/80">C3/23, Vikas Khand, Gomti Nagar,
+                    <br /> Lucknow, Uttar Pradesh 226010</p>
             </div>
             {/* <div className="flex items-center gap-4">
                 <div className="text-2xl text-primary"><MdEmail /></div>
