@@ -2,6 +2,7 @@
 import { FaLocationDot } from "react-icons/fa6";
 import FooterHeading from "./FooterHeading";
 
+
 const Contacts = () => {
     return (
         <div className="flex flex-col gap-2 my-4 text-white">
