@@ -8,6 +8,13 @@ import { MdOutlineEmail } from "react-icons/md";
 import useVisit from "../../hooks/useVisit";
 import contact_form_last from "../../assets/web-images/contact-form-last.jpg";
 
+declare global {
+	interface Window {
+	  gtag: (...args: any[]) => void;
+	}
+  }
+
+
 const ContactForm = () => {
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
@@ -72,10 +79,19 @@ const ContactForm = () => {
 				</div>
 
 				<div
-					onClick={visit.bind(
-						this,
-						`mailto:nursing@carezonelko.com?subject=Need Appointment&body=${body}`,
-					)}
+					 onClick={() => {
+						// Fire Google Ads conversion event
+						if (typeof window.gtag !== "undefined") {
+							window.gtag("event", "conversion", {
+							send_to: "AW-16998165670/yDTeCOb7s7caEKbZrak_",
+						  });
+						}
+					
+						// Open the mailto link
+						visit(
+						  `mailto:nursing@carezonelko.com?subject=Need Appointment&body=${body}`
+						);
+					  }}
 					className="py-4 m-auto mt-4">
 					<Button icon={<FaCalendarCheck />} primary two>
 						Make Appointment
