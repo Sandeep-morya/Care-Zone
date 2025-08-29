@@ -52,6 +52,9 @@ const Navbar = ({ inView }: { inView: boolean }) => {
 					<li className="text-text/75 active:text-primary hover:text-primary">
 						<Link to="/expense-bill">Generate Expenses Bill</Link>
 					</li>
+					<li className="text-text/75 active:text-primary hover:text-primary">
+						<Link to="/attendence-record">Attendence Record</Link>
+					</li>
 
 				</ul>
 			</nav>
