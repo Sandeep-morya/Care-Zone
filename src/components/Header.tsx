@@ -18,8 +18,8 @@ const Header = ({
 				<div className="flex items-center gap-8 mr-10">
 					<ContactData
 						icon={<FaRegHospital />}
-						title={"C3/23, Vikas Khand, Gomti Nagar"}
-						value={"Lucknow, Uttar Pradesh 226010"}
+						title={"Infront of Medanta Hospital, Gate No. 5, Golf City"}
+						value={"Lucknow, Uttar Pradesh 226002"}
 					/>
 					<ContactData
 						icon={

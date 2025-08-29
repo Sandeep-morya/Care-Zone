@@ -28,7 +28,7 @@ const DrawerContent = ({ toggle }: { toggle: () => void }) => {
 			<div className="flex flex-col gap-4 pl-2 mt-12">
 				<ContactData
 					icon={null}
-					title={"C3/23, Vikas Khand, Gomti Nagar"}
+					title={"Infront of Medanta Hospital, Gate No. 5, Golf City"}
 					value={"Lucknow, Uttar Pradesh 226010"}
 				/>
 				<ContactData
