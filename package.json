@@ -3,6 +3,7 @@
 	"private": true,
 	"version": "1.0.0",
 	"type": "module",
+	"homepage": ".",
 	"scripts": {
 		"start": "vite --host",
 		"build": "tsc && vite build",
@@ -10,6 +11,7 @@
 		"preview": "vite preview --host"
 	},
 	"dependencies": {
+		"@paralleldrive/cuid2": "^2.2.2",
 		"html2canvas": "^1.4.1",
 		"jspdf": "^2.5.1",
 		"react": "^18.2.0",
@@ -34,6 +36,6 @@
 		"postcss": "^8.4.32",
 		"tailwindcss": "^3.3.6",
 		"typescript": "^5.0.2",
-		"vite": "^4.3.9"
+		"vite": "^7.1.3"
 	}
 }
