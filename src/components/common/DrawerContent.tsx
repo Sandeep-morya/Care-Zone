@@ -19,10 +19,10 @@ const DrawerContent = ({ toggle }: { toggle: () => void }) => {
 				<li onClick={toggle} className="p-3 text-text/75 hover:bg-black/5 active:text-primary hover:text-primary">
 					<Link to="/expense-bill">Generate Expenses Bill</Link>
 				</li>
-
-
+				<li onClick={toggle} className="p-3 text-text/75 hover:bg-black/5 active:text-primary hover:text-primary">
+					<Link to="/attendance-record">Attendance Record</Link>
+				</li>
 			</ul>
-
 		</nav>
 	);
 };

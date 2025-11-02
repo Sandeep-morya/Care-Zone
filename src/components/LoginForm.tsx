@@ -9,13 +9,13 @@ const LoginForm = () => {
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        if (username === "Admin" && password === "admin") {
-            setAuth(true);
-            sessionStorage.setItem("carezone-auth", "true");
-        } else {
-            setAuth(false);
-            window.alert("Username or password is Invalid");
-        }
+        if (username === "Admin.CZHNS" && password === "Czhns@C13") {
+					setAuth(true);
+					sessionStorage.setItem("carezone-auth", "true");
+				} else {
+					setAuth(false);
+					window.alert("Username or password is Invalid");
+				}
     }
     return (
         <div id='#' className="flex flex-col md:flex-row">

@@ -12,6 +12,21 @@
 	to_date: string;
 }
 
+export interface PatientInfoAttendance {
+	image?: File;
+	patient_id: string;
+	patient_name: string;
+	patient_age: string;
+	patient_gender: string;
+	patient_address: string;
+	patient_phone: string;
+	from_date: string;
+	to_date: string;
+	headings: string;
+	month: string;
+	year: string;
+}
+
 export interface ServiceData {
 	service: string;
 	total_days: string;

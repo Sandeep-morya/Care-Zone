@@ -7,6 +7,7 @@ import ExpenseBill from "./pages/ExpenseBill";
 import ServiceBill from "./pages/ServiceBill";
 import Layout from "./components/Layout";
 import Dashboard from "./pages/Dashboard";
+import AttendanceRecord from "./pages/AttendanceRecord";
 
 export const AuthContext = createContext(
 	{} as {
@@ -29,6 +30,7 @@ const App = () => {
 						<Route path="/new-staff" element={<StaffAddmission />} />
 						<Route path="/expense-bill" element={<ExpenseBill />} />
 						<Route path="/service-bill" element={<ServiceBill />} />
+						<Route path="/attendance-record" element={<AttendanceRecord />} />
 					</Route>
 				</Routes>
 			</BrowserRouter>
